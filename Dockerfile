@@ -26,3 +26,5 @@ ENTRYPOINT ["dotnet", "Ecom.Catalog.Service.dll"]
 
 EXPOSE 5001
 EXPOSE 5000
+
+LABEL org.opencontainers.image.source="https://github.com/isajidh/iphonemax_catalog_api_service"
