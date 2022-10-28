@@ -22,7 +22,7 @@ RUN dotnet publish "Ecom.Catalog.Service.csproj" -c Release -o /app/publish /p:U
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-# Disabled to test in the production environment
+# Disabled to test in the production environment 
 # ENTRYPOINT ["dotnet", "Ecom.Catalog.Service.dll"]
 
 EXPOSE 5001
